@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar =[];
+        var x = document.getElementsByTagName("li");
+        for(var i=0;i<=x.length-1;i++){
+            ar.push(x[i].innerHTML);
+        }
+        console.log(ar)
+    </script>
+    
+</body>
+</html>

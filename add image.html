@@ -1,0 +1,33 @@
+<html>
+                
+       <head>
+
+         </head>
+                <body> 
+                    <input type="text" id="gm">
+                    <button onclick="abc(event)">Add image</button>
+                        <img src="" id="image">
+            
+                
+                    <script>
+                     var x=document.getElementById('image')
+                     var y=document.getElementById('gm')
+                     x.style.width="50%"
+                     x.style.height="50%"
+                     var i=0
+                     var ar=[]
+                     function abc(e){
+                        ar[i]=y.value
+                        i++
+                       
+                        
+                        ar.forEach(function(value){
+                        
+                          x.src=y.value
+            
+                        })
+                       
+                     }
+                    </script>
+                </body>
+            </html>

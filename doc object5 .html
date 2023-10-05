@@ -1,0 +1,198 @@
+
+       
+    <head>
+        
+            <!-- <p class="b">Training</p> -->
+             <!-- <p class="p1">hello</p1> -->
+             <!-- <p class="p1">welcome</p> -->
+             <!-- <p class="s1">hello</p> -->
+             <!-- <p id ="dd">welcome</p> -->
+             <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Orange</li>
+             </ul>
+             <ul id="dd"></ul>
+             <ul id="de"></ul>
+             <ul id="df"></ul>
+             <h1>Hello</h1>
+                <p>Edupoly</p>
+                <p>Training</p>
+                <p>Something</p> 
+                <div id="x"></div>
+                <div id ="dd"></div> 
+            <script>
+                var x = document.getElementsByTagName("h1")
+                console.log(x[0])
+                // datatype
+                var x = document.getElementsByTagName("h1")
+                console.log(typeof(x[0].innerHTML))
+                // uppercase
+                var x = document.getElementsByTagName("h1")
+                console.log(x[0].innerHTML.toUpperCase())
+                
+               /* // class name
+                var x = document.getElementsByClassName("p1")
+                console.log(x)
+                console.log(x[0])
+                console.log(x[1])
+                var x = document.getElementsByTagName("p")
+                console.log(x)
+                var x = document.getElementsByClassName("s1")
+                console.log(x)
+                var x = document.getElementById("dd")
+                console.log(x)
+                // change to welcome to edupoly
+                var x = document.getElementsByTagName("h1")
+                console.log(x.innerHTML="welcome to edupoly")*/
+                // change to welcome to edupoly
+                var x = document.getElementsByTagName("h1")
+                x[0].innerHTML="Welcome to edupoly"
+                console.log(x[0].innerHTML)
+
+
+
+                // 2.<h1 class="a">Hello</h1><h2 class="a">Edupoly</h2><p class="b">Training</p>
+                var y = document.getElementsByClassName("a")
+                for(var i=0;i<=y.length-1;i++)
+                {
+                    console.log(y[i].innerHTML)
+                }
+                // STORE EACH ELEMENT IN ARRAY
+                var ar = [];
+                var a = document.getElementsByTagName("li")
+                for(var i=0;i<=a.length-1;i++)
+                {
+                    ar.push(a[i].innerHTML)
+                }
+                console.log(ar)
+                // 4.
+                var x = document.getElementsByTagName("p")
+                console.log(x[0].innerHTML)
+                // 5 .
+                var x = document.createElement("h1")
+                x.innerHTML="Hello DOM World!";
+                var y = document.getElementById("dd")
+                y.appendChild(x);
+                console.log(x)
+
+                // 5-1
+                var x = document.createElement("h1")
+                x.innerHTML="Hello DOM World!";
+                var y = document.getElementById("dd")
+                y.appendChild(x);
+                console.log(x)
+                x.style.color="red"
+                // 5-2
+                var ar = ["madhuri","manasa","gowri"];
+                for(var i=0;i<=ar.length-1;i++){
+                    var y = document.createElement("li")
+                    ar.innerHTML= x;
+                    var z = document.getElementById("dd")
+                    z.appendChild(y);
+
+                }
+                var a = document.createElement("table")
+                a.style.border = "1px solid black"
+                var b = document.createElement("tr")
+                a.appendChild(b);
+                var c = document.createElement("th")
+                c.style.border = "1px solid black"
+                c.innerHTML="NAME"
+                b.appendChild(c)
+                var d = document.createElement("th")
+                d.style.border = "1px solid black"
+                d.innerHTML="age"
+                b.appendChild(d)
+                var e = document.createElement("tr")
+                a.appendChild(e)
+                var f = document.createElement("td")
+                f.style.border = "1px solid black"
+                f.innerHTML="madhuri"
+                e.appendChild(f)
+                var g = document.createElement("td")
+                g.style.border = "1px solid black"
+                g.innerHTML="20"
+                e.appendChild(g)
+                var h = document.createElement("tr")
+                a.appendChild(h)
+                var i = document.createElement("td")
+                i.style.border = "1px solid black"
+                i.innerHTML="madhuri"
+                h.appendChild(i)
+                var j = document.createElement("td")
+                j.style.border = "1px solid black"
+                j.innerHTML="23"
+                h.appendChild(j)
+                var l = document.getElementById("x")
+                l.appendChild(a)
+
+                
+        var ar = [{
+                Name :"madhuri",Age:20
+            },
+            {
+                Name :"manasa",Age:21
+
+            }
+            ]
+            var x = document.createElement("table")
+            x.style.border = "1px solid black"
+            var y = document.createElement("tr")
+            x.appendChild(y)
+            var z = document.createElement("th")
+            z.style.border= "1px solid black"
+            z.innerHTML = "Name"
+            y.appendChild(z)
+            var a = document.createElement("th")
+            a.style.border= "1px solid black"
+            a.innerHTML = "Age"
+            y.appendChild(a)
+            ar.forEach(function(value){
+                var b = document.createElement("tr")
+                b.style.border= "1px solid black"
+                x.appendChild(b)
+                var c = document.createElement("td")
+                c.style.border= "1px solid black"
+                c.innerHTML = "Divya"
+                c.innerHTML = value.Name
+                b.appendChild(c)
+                var d = document.createElement("td")
+                d.style.border= "1px solid black"
+                d.innerHTML = "20"
+                d.innerHTML = value.Age
+                b.appendChild(d)
+            });
+            var y = document.getElementById("dd")
+            y.appendChild(x)
+
+
+
+
+
+
+                
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+                
+            </script>
+        </body>
+    </head>
+</html>
+
+    </script>
+    
+</body>
+</html>

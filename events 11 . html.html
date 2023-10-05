@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <body>
+            <center><h1 style="color: red;text-align: center;">Show bulb on/off image  Using Toogole Buttons </h1><br></center>
+               <center>
+                 <div id="df">
+                 <img id="off" src="https://cdn.pixabay.com/photo/2016/11/30/18/14/light-bulb-1873540_1280.png" width="100" height="200">
+                <img id="on" src="https://previews.123rf.com/images/val2014/val20141506/val2014150600011/40929991-light-bulb.jpg" width="100" height="200"></div></center>
+                <center>
+                    <button id="dd" onclick="abc()"style="background-color: red;"> ON</button></center>
+            
+            <script>
+                 var u=document.getElementById("df")
+                 var x=document.getElementById("dd")
+                     x.innerHTML="on"
+                 var y=document.getElementById("off")
+                     y.style.display="block"
+                 var z=document.getElementById("on")
+                     z.style.display="none"
+                function abc() {
+                  if (y.style.display === "block") {
+                      z.style.display = "block"
+                      y.style.display="none"
+                      x.innerHTML="off"
+                        
+                            
+                } 
+                 else if(y.style.display=="none"){
+                      
+                      y.style.display = "block"
+                      z.style.display="none"
+                      x.innerHTML="on"
+                 }
+
+
+            }
+
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <body>
+            <center><h1 style="color: red;text-align: center;">Add Contact Cards </h1><br><br>
+            <h style="color: red;text-align: center;">Name:</h><input type="text"id="username"><br><br>
+            <h style="color: red;text-align: center;">Number:</h><input type="text"id="ph"><br><br>
+            <h style="color: red;text-align: center;">Email:</h><input type="text"id="gmail"><br><br>
+            <h style="color: red;text-align: center;">Enter Image URL:</h><input type="text"id="url"><br><br>
+            <button style="background-color: yellow;" id="s"onclick="Cards()">Add Contact</button></center>
+             <div id="dd"></div>   
+            <script>
+                var ar =[];
+                index=0;
+                var z = document.getElementById("dd")
+                var p = document.getElementById("s")
+                function Cards(){
+                  var ar1={};
+                 
+                var username = document.getElementById("username").value;
+                var ph = document.getElementById("ph").value;
+                var mail = document.getElementById("gmail").value;
+                var url = document.getElementById("url").value;
+                ar1.username=username
+                ar1.ph=ph
+                ar1.mail=mail
+                ar1.url=url
+                ar(index)=ar1
+
+                var x=document.createElement("div")
+                x.style.width="200px"
+                x.style.height="200px"
+                x.style.border="1"
+                x.style.backgroundColor="yellow"
+
+
+                var url =document.createElement("img")
+                url.style.width="200"
+                url.style.height="200"
+                url.style.borderRadius="50%"
+
+                x.appendChild(url)
+
+                var username=document.createElement("p")
+                div.appendChild(username) 
+
+                var ph=document.createElement("p")
+                div.appendChild(ph)
+
+                var mail=document.createElement("p")
+                div.appendChild(mail)
+
+                var imgurl=document.createElement("p")
+                div.appendChild(imgurl)
+
+                var del = document.createElement("button")
+                        del.innerHTML="delete"
+                        y.appendChild(del)
+                        del.onclick = function(){
+                            ar1.splice(index,1);
+                            y.innerHTML = "";
+                            
+                            
+                
+
+
+
+                        }
+                 
+                
+                
+                
+                
+                        
+
+
+
+
+
+                 
+                
+
+
+
+
+                 
+
+
+                  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+
+                  
+                  
+                
+                 
+
+
+                    
+                }
+
+
+            </script>
+        </body>
+    </head>
+</html>

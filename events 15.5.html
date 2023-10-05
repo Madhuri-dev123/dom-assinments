@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <body>
+            <div onclick="abc()" id="dd" url="https://i.pinimg.com/originals/3e/df/d9/3edfd9d9c53a329b1aff92f798e5c199.jpg" width: 100px;height: 200px; ></div>
+            
+           
+            <script>
+                var ar=["https://i.pinimg.com/originals/3e/df/d9/3edfd9d9c53a329b1aff92f798e5c199.jpg","https://i.pinimg.com/originals/3e/df/d9/3edfd9d9c53a329b1aff92f798e5c199.jpg","https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg"]
+                var i = 0;
+                var x = document.getElementById("dd")
+                x.style.url=ar[i]
+                function abc(){
+                    if(i===ar.url(length-1)){
+                        i=0;
+                        x.style=ar[i];
+                }else{
+                        i++;
+                        x.style.url=ar[i];
+                    }
+                    
+            }          
+            </script>
+        </body>
+    </head>
+</html>

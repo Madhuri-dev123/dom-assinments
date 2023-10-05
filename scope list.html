@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <body>
+            <ul id="d1">
+
+            </ul>
+            <ul id="d2">
+
+            </ul>
+            <script>
+                
+                var ar=['madhuri','manasa','gowri','vandana','rani','santhosh','bindhu','nevas','devagya']
+                var x = document.getElementById("d1")
+                var y = document.getElementById("d2")
+                
+                for (var i=0;i<=ar.length-1;i++){
+                    var x = document.createElement("li");
+                    x.innerHTML=ar[i];
+                    y.appendChild(x)
+                }
+                ar.forEach(function(a,i){
+                    var x=document.createElement("li");
+                    x.innerHTML=a;
+                    z.appendChild(x)
+
+                })
+
+            </script>
+        </body>
+    </head>
+</html>

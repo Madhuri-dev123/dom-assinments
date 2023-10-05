@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <body>
+            
+            <ul id="dd">
+
+            </ul>
+            
+            <script>
+                 var ar =['madhuri','manasa','gowri','vandana','rani','santhoshi','bindhu','nevas','devagya']                                                           
+                 function displaylist(){
+                    ar.forEach(function abc(value,indix){
+                        var y = document.getElementById("dd")
+                        var x = document.createElement("li")
+                        x.innerHTML = value
+                        var del = document.createElement("button")
+                        del.innerHTML="delete"
+                        y.appendChild(del)
+                        y.appendChild(x)
+                        del.onclick = function(){
+                            ar.splice(index,1);
+                            y.innerHTML = "";
+                            displaylist ();
+
+                        }
+                    })
+                 }
+                 displaylist();
+                
+                   
+                       
+                        
+
+            </script>
+        </body>
+    </head>
+</html>
