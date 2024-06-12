@@ -1,7 +1,7 @@
 <html>
     <head>
         <body>
-            <div id=""></div>
+            <div id="d1"></div>
             <script>
                 var students = [
                                 {
@@ -44,9 +44,11 @@
                             students.forEach(function(student) {
                             var li = document.createElement('li');
                             li.textContent = `${student.name}, ${student.gender}, ${student.place}`;
-                            ul.appendChild(ul);
+                            ul.appendChild(li);
                             });
                             document.body.appendChild(ul);
+
+                            
 
             </script>
         </body>
